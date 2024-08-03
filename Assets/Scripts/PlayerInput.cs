@@ -5,10 +5,14 @@ using UnityEngine.InputSystem;
 
 public class PlayerInput : MonoBehaviour
 {
-    [SerializeField] private InputAction movement;
-    [SerializeField] private InputAction fire;
+    [Header("Particle effects")]
     [SerializeField] private ParticleSystem snowballs;
 
+    [Header("Input system")]
+    [SerializeField] private InputAction movement;
+    [SerializeField] private InputAction fire;
+
+    [Header("Movement adjustment settings")]
     [SerializeField] private float xVelocity = 1;
     [SerializeField] private float yVelocity = 1;
 
